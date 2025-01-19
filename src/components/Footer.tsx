@@ -127,17 +127,20 @@ const Footer = () => {
           </div>
 
           {/* Bottom Bar */}
-          <div className="mt-16 pt-8 border-t border-blue-800 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm text-gray-300">
-              © 2024 Registerkaro. All Rights Reserved.
-            </p>
-            <button 
-              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-              className="mt-4 md:mt-0 bg-blue-800 p-2 rounded-full hover:bg-blue-700 transition-colors"
-            >
-              <ArrowUp size={20} />
-            </button>
-          </div>
+          <div className="mt-16 pt-8 border-t border-blue-800 flex flex-col md:flex-row justify-center items-center">
+  <div className="flex flex-col justify-center items-center ">
+    <button 
+      onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+      className="mb-2 bg-yellow-500 p-2 rounded-full hover:bg-blue-700 transition-colors"
+    >
+      <ArrowUp size={20} />
+    </button>
+    <p className="text-sm text-gray-300">
+      © 2024 Registerkaro. All Rights Reserved.
+    </p>
+  </div>
+</div>
+
         </div>
       </div>
     </footer>
