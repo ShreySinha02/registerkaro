@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { ChevronRight, ChevronLeft, Star, ChevronDown } from 'lucide-react';
 import chris from './../assets/chris.png'
 
 const TestimonialsFAQ = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [openFAQ, setOpenFAQ] = useState(null);
+  // const [currentSlide, setCurrentSlide] = useState(0);
+  const [openFAQ, setOpenFAQ] = useState<number|null>(null);
 
   const testimonials = [
     {
@@ -46,13 +46,7 @@ const TestimonialsFAQ = () => {
     }
   ];
 
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % testimonials.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + testimonials.length) % testimonials.length);
-  };
+ 
 
   return (
     <div className="w-full bg-gradient-to-b from-blue-900 to-blue-800">
@@ -110,13 +104,13 @@ const TestimonialsFAQ = () => {
             {/* Navigation Buttons */}
             <div className="absolute -top-16 right-0 flex gap-2">
               <button
-                onClick={prevSlide}
+               
                 className="p-2 bg-blue-800 text-white rounded-full hover:bg-blue-700 transition-colors"
               >
                 <ChevronLeft className="w-6 h-6" />
               </button>
               <button
-                onClick={nextSlide}
+               
                 className="p-2 bg-blue-800 text-white rounded-full hover:bg-blue-700 transition-colors"
               >
                 <ChevronRight className="w-6 h-6" />

@@ -1,11 +1,10 @@
-
-import { 
-  Building2, 
-  FileText, 
-  Users, 
-  ClipboardCheck, 
-  Calculator, 
-  BookOpen 
+import {
+  Building2,
+  FileText,
+  Users,
+  ClipboardCheck,
+  Calculator,
+  BookOpen,
 } from 'lucide-react';
 
 const ServicesSection = () => {
@@ -13,33 +12,33 @@ const ServicesSection = () => {
     {
       icon: <Building2 className="w-12 h-12 text-orange-400" />,
       title: 'Company Formation',
-      description: 'Build web-based solutions that enhance customer experience.',
+      description: 'Streamline the process of setting up your company hassle-free.',
     },
     {
       icon: <FileText className="w-12 h-12 text-orange-400" />,
       title: 'Company Secretarial Services',
-      description: 'Make data-driven decisions and utilize technology to reach business goals.',
+      description: 'Ensure smooth operations with reliable compliance support.',
     },
     {
       icon: <Users className="w-12 h-12 text-orange-400" />,
       title: 'Virtual Office Address',
-      description: 'Foster customer relationships by effectively serving your market.',
+      description: 'Establish your presence with a prestigious virtual office address.',
     },
     {
       icon: <ClipboardCheck className="w-12 h-12 text-orange-400" />,
       title: 'Annual Compliance Services',
-      description: 'Turn your ideas into modern products with our design experts.',
+      description: 'Stay compliant with annual filings and regulatory requirements.',
     },
     {
       icon: <Calculator className="w-12 h-12 text-orange-400" />,
       title: 'Payroll Services',
-      description: 'Expand your business across the globe with minimal effort.',
+      description: 'Simplify payroll management with expert assistance.',
     },
     {
       icon: <BookOpen className="w-12 h-12 text-orange-400" />,
       title: 'Bookkeeping Services',
-      description: 'Steering user behaviors with creative design, data insights & technology.',
-    }
+      description: 'Keep your financial records accurate and up-to-date.',
+    },
   ];
 
   return (
@@ -48,7 +47,7 @@ const ServicesSection = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <p className="text-sm text-gray-500 uppercase tracking-wider mb-2">
-            WELCOME TO REGISTERKARO.IN
+            Welcome to RegisterKaro.in
           </p>
           <h2 className="text-3xl font-bold text-gray-900">
             Explore Our Services
@@ -56,35 +55,33 @@ const ServicesSection = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div 
+            <div
               key={index}
               className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
             >
               <div className="flex flex-col items-center text-center">
-                <div className="mb-4">
-                  {service.icon}
-                </div>
+                <div className="mb-4">{service.icon}</div>
                 <h3 className="text-xl font-semibold mb-3 text-gray-900">
                   {service.title}
                 </h3>
-                <p className="text-gray-600 mb-4 text-sm">
+                <p className="text-gray-600 mb-4 text-sm leading-relaxed">
                   {service.description}
                 </p>
                 <button className="text-blue-600 hover:text-blue-700 inline-flex items-center text-sm font-medium">
                   Learn more
-                  <svg 
-                    className="w-4 h-4 ml-1" 
-                    fill="none" 
-                    viewBox="0 0 24 24" 
+                  <svg
+                    className="w-4 h-4 ml-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
                     stroke="currentColor"
                   >
-                    <path 
-                      strokeLinecap="round" 
-                      strokeLinejoin="round" 
-                      strokeWidth={2} 
-                      d="M9 5l7 7-7 7" 
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
                     />
                   </svg>
                 </button>

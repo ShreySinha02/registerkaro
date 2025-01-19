@@ -1,19 +1,18 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Facebook, Twitter, Apple, Instagram, ArrowUp } from 'lucide-react';
-import zoom from './../assets/zoom.png'
-import slack from './../assets/slack.png'
-import webflow from './../assets/spotify.png'
-import dropbox from './../assets/webflow.png'
-import spotify from './../assets/dropbox.png'
-
+import zoom from './../assets/zoom.png';
+import slack from './../assets/slack.png';
+import webflow from './../assets/spotify.png';
+import dropbox from './../assets/webflow.png';
+import spotify from './../assets/dropbox.png';
 
 const Footer = () => {
   const [email, setEmail] = useState('');
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle email submission
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   // Handle email submission
+  // };
 
   const features = [
     "Instant results",
@@ -40,7 +39,7 @@ const Footer = () => {
             </h2>
 
             {/* Email Form */}
-            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+            <form  className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
               <input
                 type="email"
                 placeholder="Enter Your Email"
@@ -73,12 +72,12 @@ const Footer = () => {
       <div className="border-y border-gray-200 py-8">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-            {[{name:'coinbase',value:zoom}, {name:'spotify',value:spotify},{name:'slack',value:slack}, {name:'dropbox',value:dropbox}, {name:'webflow',value:webflow}, {name:'zoom',value:zoom}].map(({name,value}, index) => (
+            {[{name:'coinbase', value:zoom}, {name:'spotify', value:spotify}, {name:'slack', value:slack}, {name:'dropbox', value:dropbox}, {name:'webflow', value:webflow}, {name:'zoom', value:zoom}].map(({name, value}, index) => (
               <img
                 key={index}
                 src={value}
                 alt={name}
-                className="h-16 object-contain  transition-all"
+                className="h-16 object-contain transition-all"
               />
             ))}
           </div>
@@ -133,7 +132,7 @@ const Footer = () => {
               © 2024 Registerkaro. All Rights Reserved.
             </p>
             <button 
-              onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               className="mt-4 md:mt-0 bg-blue-800 p-2 rounded-full hover:bg-blue-700 transition-colors"
             >
               <ArrowUp size={20} />
