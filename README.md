@@ -1,3 +1,17 @@
+
+## Live Demo
+
+Check out the live demo of the project here:  
+[Vercel Deployment Link](https://registerkaro-wheat.vercel.app)
+
+## Screenshot
+
+![Screenshot of the Project](https://github.com/ShreySinha02/registerkaro/blob/main/Screenshot%20from%202025-01-20%2000-16-09.png)
+![Screenshot of the Project](https://github.com/ShreySinha02/registerkaro/blob/main/Screenshot%20from%202025-01-20%2000-16-42.png)
+
+
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
