@@ -20,7 +20,7 @@ const HeroSection = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-yellow-500 flex flex-col">
+    <div className="min-h-screen  flex flex-col">
       {/* Main Hero Section */}
       <div
         className="w-full flex-1 bg-cover bg-center px-8 py-12 relative"
